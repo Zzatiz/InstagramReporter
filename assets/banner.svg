@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280">
+  <defs>
+    <!-- Instagram-inspired gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#200d1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1a2e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Pink/purple glow top-right -->
+    <radialGradient id="glow1" cx="75%" cy="25%" r="40%">
+      <stop offset="0%" style="stop-color:#e1306c;stop-opacity:0.22" />
+      <stop offset="100%" style="stop-color:#e1306c;stop-opacity:0" />
+    </radialGradient>
+    <!-- Purple glow bottom-left -->
+    <radialGradient id="glow2" cx="20%" cy="80%" r="40%">
+      <stop offset="0%" style="stop-color:#833ab4;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#833ab4;stop-opacity:0" />
+    </radialGradient>
+    <!-- Yellow/orange warm glow right -->
+    <radialGradient id="glow3" cx="90%" cy="60%" r="30%">
+      <stop offset="0%" style="stop-color:#fd1d1d;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#fd1d1d;stop-opacity:0" />
+    </radialGradient>
+    <!-- Instagram gradient for accent elements -->
+    <linearGradient id="instaGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fcb045;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#fd1d1d;stop-opacity:1" />
+      <stop offset="66%" style="stop-color:#e1306c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#833ab4;stop-opacity:1" />
+    </linearGradient>
+    <!-- Title white gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+    <!-- Subtle grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" fill="url(#bgGrad)" rx="12"/>
+  <rect width="1200" height="280" fill="url(#grid)" rx="12"/>
+  <rect width="1200" height="280" fill="url(#glow1)" rx="12"/>
+  <rect width="1200" height="280" fill="url(#glow2)" rx="12"/>
+  <rect width="1200" height="280" fill="url(#glow3)" rx="12"/>
+
+  <!-- Outer border -->
+  <rect width="1200" height="280" fill="none" stroke="url(#instaGrad)" stroke-width="1.5" stroke-opacity="0.35" rx="12"/>
+
+  <!-- Instagram-style camera icon (top center, decorative) -->
+  <!-- Camera body -->
+  <rect x="573" y="22" width="54" height="42" rx="9" fill="none" stroke="url(#instaGrad)" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Lens ring -->
+  <circle cx="600" cy="43" r="12" fill="none" stroke="url(#instaGrad)" stroke-width="1.5" stroke-opacity="0.6"/>
+  <circle cx="600" cy="43" r="5" fill="url(#instaGrad)" fill-opacity="0.5"/>
+  <!-- Viewfinder dot -->
+  <circle cx="621" cy="28" r="2.5" fill="url(#instaGrad)" fill-opacity="0.7"/>
+
+  <!-- Main title -->
+  <text x="600" y="118" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="66" font-weight="700" fill="url(#titleGrad)" text-anchor="middle" letter-spacing="-1.5">InstagramReporter</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="147" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#ffffff" fill-opacity="0.45" text-anchor="middle" letter-spacing="0.5">Telegram bot for automated Instagram reporting, AI-powered CAPTCHA solving &amp; account management</text>
+
+  <!-- Gradient divider line -->
+  <line x1="350" y1="165" x2="850" y2="165" stroke="url(#instaGrad)" stroke-opacity="0.3" stroke-width="1"/>
+
+  <!-- Feature cards -->
+  <!-- Card 1 -->
+  <rect x="100" y="182" width="160" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#e1306c" stroke-opacity="0.18" stroke-width="1"/>
+  <!-- Instagram icon dot -->
+  <circle cx="122" cy="200" r="4" fill="#e1306c" fill-opacity="0.7"/>
+  <text x="132" y="204" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.7" text-anchor="start">Auto-Reporting</text>
+  <text x="110" y="228" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">Navigate &amp; submit reports</text>
+  <text x="110" y="240" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">via Puppeteer automation</text>
+
+  <!-- Card 2: adjusted centering -->
+  <rect x="277" y="182" width="160" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#833ab4" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="299" cy="200" r="4" fill="#833ab4" fill-opacity="0.7"/>
+  <text x="309" y="204" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.7" text-anchor="start">AI CAPTCHA Solver</text>
+  <text x="357" y="228" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">Azure Vision API +</text>
+  <text x="357" y="240" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">OpenAI image analysis</text>
+
+  <!-- Card 3 -->
+  <rect x="454" y="182" width="160" height="58" rx="8" fill="url(#instaGrad)" fill-opacity="0.06" stroke="url(#instaGrad)" stroke-opacity="0.3" stroke-width="1"/>
+  <circle cx="476" cy="200" r="4" fill="#fd1d1d" fill-opacity="0.8"/>
+  <text x="486" y="204" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.8" text-anchor="start">Telegram Interface</text>
+  <text x="534" y="228" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.35" text-anchor="middle">Command-driven bot with</text>
+  <text x="534" y="240" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.35" text-anchor="middle">user whitelisting</text>
+
+  <!-- Card 4 -->
+  <rect x="631" y="182" width="160" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#fcb045" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="653" cy="200" r="4" fill="#fcb045" fill-opacity="0.7"/>
+  <text x="663" y="204" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.7" text-anchor="start">Profile Management</text>
+  <text x="711" y="228" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">Set PFP, manage login,</text>
+  <text x="711" y="240" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">reset browser session</text>
+
+  <!-- Card 5 -->
+  <rect x="808" y="182" width="160" height="58" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#e1306c" stroke-opacity="0.18" stroke-width="1"/>
+  <circle cx="830" cy="200" r="4" fill="#e1306c" fill-opacity="0.7"/>
+  <text x="840" y="204" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600" fill="#ffffff" fill-opacity="0.7" text-anchor="start">Audit Logging</text>
+  <text x="888" y="228" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">Group-based action log,</text>
+  <text x="888" y="240" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8.5" fill="#ffffff" fill-opacity="0.28" text-anchor="middle">timestamped activity</text>
+
+  <!-- Bottom tech stack -->
+  <text x="600" y="262" font-family="'SF Mono', 'Fira Mono', monospace" font-size="9" fill="#ffffff" fill-opacity="0.18" text-anchor="middle" letter-spacing="1.5">PYTHON · PYPPETEER · TELEGRAM BOT API · OPENAI · AZURE VISION</text>
+</svg>
